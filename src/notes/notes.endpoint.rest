@@ -1,0 +1,69 @@
+### FETCH ALLING ALL NOTES
+
+GET http://localhost:3000/notes
+Content-Type: application/json
+
+
+### CREATE NEW NOTE
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+[
+  {
+    "title": "Grocery List",
+    "notes": "Buy milk, eggs, bread, and coffee. Don't forget to check for discounts at the store."
+  },
+  {
+    "title": "Meeting Notes",
+    "notes": "Discuss project deadlines and deliverables. Prepare slides for the presentation next week."
+  },
+  {
+    "title": "Workout Plan",
+    "notes": "Monday: Chest and triceps. Wednesday: Back and biceps. Friday: Legs and shoulders. Cardio on alternate days."
+  },
+  {
+    "title": "Book Ideas",
+    "notes": "Explore themes of adventure and friendship. Possible title: 'Journey Through the Unknown'."
+  },
+  {
+    "title": "Learning Goals",
+    "notes": "Complete React and TypeScript tutorials. Practice building reusable components and state management."
+  },
+  {
+    "title": "Travel Packing List",
+    "notes": "Pack clothes for 5 days, travel documents, toiletries, power bank, and a good book to read."
+  },
+  {
+    "title": "Recipe: Pancakes",
+    "notes": "Ingredients: Flour, milk, eggs, sugar, and baking powder. Mix and cook on medium heat until golden."
+  },
+  {
+    "title": "Ideas for Blog Posts",
+    "notes": "1. Top 5 programming tips. 2. How to stay productive while working remotely. 3. Best tools for web developers."
+  },
+  {
+    "title": "Birthday Plans",
+    "notes": "Host a dinner party with friends and family. Plan games and music for entertainment."
+  },
+  {
+    "title": "Daily Gratitude",
+    "notes": "Today I am grateful for good health, supportive friends, and the opportunity to learn new skills."
+  }
+]
+
+
+
+### UPDATE NOTE
+PUT http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "id": "e888732a-7136-401a-9579-4b140b92736b",
+  "title": "I am not tired",
+  "notes": "I said I am not tired"
+}
+
+
+### DELETING A NOTE
+DELETE http://localhost:3000/notes/e888732a-7136-401a-9579-4b140b92736b
+Content-Type: application/json
